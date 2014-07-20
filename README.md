@@ -1,4 +1,4 @@
-# generator-cfpb [![Build Status](https://secure.travis-ci.org/cfpb/generator-node-cfpb.png?branch=master)](https://travis-ci.org/cfpb/generator-node-cfpb)
+# generator-node-cfpb [![Build Status](https://secure.travis-ci.org/cfpb/generator-node-cfpb.png?branch=master)](https://travis-ci.org/cfpb/generator-node-cfpb)
 
 > [Yeoman](http://yeoman.io) generator for CFPB node modules.
 
