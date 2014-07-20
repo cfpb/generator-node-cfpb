@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-cfpb' ]; then cd .. && eval "mv $currentfolder generator-cfpb" && cd generator-cfpb; fi
+
