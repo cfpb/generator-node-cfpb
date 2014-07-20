@@ -3,5 +3,5 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-cfpb' ]; then cd .. && eval "mv $currentfolder generator-cfpb" && cd generator-cfpb; fi
+  - if [ "$currentfolder" != 'generator-node-cfpb' ]; then cd .. && eval "mv $currentfolder generator-node-cfpb" && cd generator-node-cfpb; fi
 
