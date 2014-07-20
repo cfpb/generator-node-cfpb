@@ -1,47 +1,51 @@
-# generator-cfpb [![Build Status](https://secure.travis-ci.org/cfpb/generator-cfpb.png?branch=master)](https://travis-ci.org/cfpb/generator-cfpb)
+# generator-cfpb [![Build Status](https://secure.travis-ci.org/cfpb/generator-node-cfpb.png?branch=master)](https://travis-ci.org/cfpb/generator-node-cfpb)
 
-> [Yeoman](http://yeoman.io) generator
+> [Yeoman](http://yeoman.io) generator for CFPB node modules.
 
 
-## Getting Started
+## Installation
 
-### What is Yeoman?
+Install this generator by running: `npm install -g generator-node-cfpb`.
 
-Trick question. It's not a thing. It's this guy:
 
-![](http://i.imgur.com/JHaAlBJ.png)
+## Usage
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
+At the command-line, cd into an empty directory, run this command and follow the prompts.
 
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```bash
-$ npm install -g yo
+```
+yo node-cfpb
 ```
 
-### Yeoman Generators
+_Note that this template will generate files in the current directory, so be sure to change to a new directory first if you don't want to overwrite existing files._
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+## Contributing
 
-To install generator-cfpb from npm, run:
+Please read the [Contributing guidelines](CONTRIBUTING.md).
 
-```bash
-$ npm install -g generator-cfpb
+### Running Tests
+
+To run tests, first install [mocha](http://visionmedia.github.io/mocha/) and any dependencies via npm:
+
+```
+npm install
 ```
 
-Finally, initiate the generator:
+Run tests with:
 
-```bash
-$ yo cfpb
 ```
-
-### Getting To Know Yeoman
-
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
+npm test
+```
 
 ## License
 
-MIT
+The project is in the public domain within the United States, and
+copyright and related rights in the work worldwide are waived through
+the [CC0 1.0 Universal public domain dedication](http://creativecommons.org/publicdomain/zero/1.0/).
+
+All contributions to this project will be released under the CC0
+dedication. By submitting a pull request, you are agreeing to comply
+with this waiver of copyright interest.
+
+Software source code previously released under an open source license and then modified by CFPB staff is considered a "joint work" (see 17 USC § 101); it is partially copyrighted, partially public domain, and as a whole is protected by the copyrights of the non-government authors and must be released according to the terms of the original open-source license.
+
+For further details, please see: http://www.consumerfinance.gov/developers/sourcecodepolicy/
