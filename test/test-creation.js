@@ -10,7 +10,7 @@ describe('cfpb generator', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('cfpb:app', [
+      this.app = helpers.createGenerator('node-cfpb:app', [
         '../../app'
       ]);
       done();
