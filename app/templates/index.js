@@ -1,9 +1,7 @@
 /*
  * <%= props.name %>
- * <%= props.homepage %>
  *
- * Copyright (c) <%= currentYear %> <%= props.authorName %>
- * Licensed under the <%= props.license %> license.
+ * A work of the public domain from the Consumer Financial Protection Bureau.
  */
 
 'use strict';
