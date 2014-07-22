@@ -14,9 +14,6 @@
     "url": "<%= repoUrl %>"
   },
   "license": "Public Domain",
-  "files": [
-    "lib"
-  ],
   "keywords": [
     "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
     "<%= keywords[i] %>"<% } %>
@@ -27,6 +24,6 @@
   },
   "scripts": {
     "test": "nodeunit test/<%= slugname %>-tests.js"<% if (props.browser === "yes") { %>,
-    "browser": "browserify lib/<%= slugname %>.js > dist/<%= slugname %>.js"<%}%>
+    "browser": "mkdir dist -p && browserify index.js > dist/<%= slugname %>.js"<%}%>
   }
 }
