@@ -24,6 +24,6 @@
   },
   "scripts": {
     "test": "nodeunit test/<%= slugname %>-tests.js"<% if (props.browser === "yes") { %>,
-    "browser": "mkdir -p dist && browserify index.js > dist/<%= slugname %>.js"<%}%>
+    "browser": "mkdir -p dist && browserify index.js -s <%= slugname %> -o dist/<%= slugname %>.js"<%}%>
   }
 }
