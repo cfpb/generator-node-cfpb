@@ -16,14 +16,15 @@
   "license": "Public Domain",
   "keywords": [
     "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
-    "<%= keywords[i] %>"<% } %>
+    "<%= keywords[i] %>"<% } %><% if (props.browser === "yes") { %>,
   ],
   "devDependencies": {
     "nodeunit": "~0.8.6"<% if (props.browser === "yes") { %>,
-    "browserify": "^4.1.3"<% } %>
+    "browserify": "^4.1.3",
+    "uglify-js": "~2.4.15"<% } %>
   },
   "scripts": {
     "test": "nodeunit test/<%= slugname %>-tests.js"<% if (props.browser === "yes") { %>,
-    "browser": "mkdir -p dist && browserify index.js -s <%= slugname %> -o dist/<%= slugname %>.js"<%}%>
+    "browser": "mkdir -p dist && ./node_modules/.bin/browserify index.js -s <%= slugname %> -o dist/<%= slugname %>.js && ./node_modules/.bin/uglifyjs dist/<%= slugname %>.js -m -c sequences,dead_code,conditionals,booleans,unused,if_return,join_vars,drop_console -o dist/<%= slugname %>.min.js"<%}%>
   }
 }

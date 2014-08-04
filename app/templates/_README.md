@@ -1,11 +1,28 @@
 # <%= props.name %> [![Build Status](https://secure.travis-ci.org/cfpb/<%= slugname %>.png?branch=master)](http://travis-ci.org/cfpb/<%= slugname %>)
+<% if (props.browser === "yes") { %>
+[![NPM](https://nodei.co/npm/<%= slugname %>.png?downloads=true)](https://nodei.co/npm/<%= slugname %>/)
 
+[![browser support](https://ci.testling.com/cfpb/<%= slugname %>.png)
+](https://ci.testling.com/cfpb/<%= slugname %>)
+<%}%>
 > <%= props.description %>
 
 ## Installation
 
 First install [node.js](http://nodejs.org/). Then:
 
+```sh
+npm install <%= slugname %> --save
+```
+<% if (props.browser === "yes") { %>
+Grab the `dist/<%= slugname %>.js` file and include it at the bottom of your page:
+
+```html
+<script src="<%= slugname %>.js"></script>
+```
+
+Or use [Browserify](http://browserify.org/):
+<%}%>
 ```sh
 npm install <%= slugname %> --save
 ```
