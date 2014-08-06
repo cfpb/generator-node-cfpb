@@ -21,7 +21,7 @@ describe('cfpb generator', function () {
     var expected = [
       // add files you expect to exist here.
       '.jshintrc',
-      'COPYING.txt',
+      'LICENSE',
       'CONTRIBUTING.md',
       'README.md',
       'TERMS.md'

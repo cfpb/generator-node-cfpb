@@ -81,7 +81,7 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
         this.template('_package.json', 'package.json');
         this.template('TERMS.md', 'TERMS.md');
         this.template('CONTRIBUTING.md', 'CONTRIBUTING.md');
-        this.template('COPYING.txt', 'COPYING.txt');
+        this.template('LICENSE', 'LICENSE');
     },
 
     projectfiles: function() {
