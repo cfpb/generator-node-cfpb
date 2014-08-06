@@ -17,6 +17,7 @@
   "keywords": [
     "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
     "<%= keywords[i] %>"<% } %><% if (props.browser === "yes") { %>,
+    "browserify"<% } %>
   ],
   "devDependencies": {
     "nodeunit": "~0.8.6"<% if (props.browser === "yes") { %>,
