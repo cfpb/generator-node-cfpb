@@ -1,6 +1,6 @@
 {
   "name": "generator-node-cfpb",
-  "version": "0.2.2",
+  "version": "1.0.0",
   "description": "Yeoman generator for CFPB node modules",
   "license": "Public Domain",
   "main": "app/index.js",
