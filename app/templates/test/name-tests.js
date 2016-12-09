@@ -27,10 +27,10 @@ exports.<%= safeSlugname %> = {
     // setup here
     done();
   },
-  'no args': function(test) {
+  'some args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(<%= safeSlugname %>.awesome(), 'awesome', 'should be awesome.');
+    test.equal(<%= safeSlugname %>({foo: 'bar'}), 'foo is bar!', 'should print them to the user');
     test.done();
   }
 };

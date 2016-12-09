@@ -3,7 +3,6 @@
 var chalk = require('chalk');
 var path = require('path');
 var yosay = require('yosay');
-var npmName = require('npm-name');
 var yeoman = require('yeoman-generator');
 
 var NodeGenerator = module.exports = yeoman.generators.Base.extend({
@@ -20,22 +19,6 @@ var NodeGenerator = module.exports = yeoman.generators.Base.extend({
             name: 'name',
             message: 'Module Name',
             default: path.basename(process.cwd()),
-        }, {
-            type: 'confirm',
-            name: 'pkgName',
-            message: 'The name above already exists on npm, choose another?',
-            default: true,
-            when: function(answers) {
-                var done = this.async();
-
-                npmName(answers.name, function(err, available) {
-                    if (!available) {
-                        done(true);
-                    }
-
-                    done(false);
-                });
-            }
         }, {
             name: 'description',
             message: 'Description',

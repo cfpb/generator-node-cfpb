@@ -32,7 +32,7 @@ var <%= slugname %> = require('<%= slugname %>');
 
 ```javascript
 var <%= slugname %> = require('<%= slugname %>');
-<%= slugname %>.doTheThing({ thing: 'foo', anotherThing: 'bar' });
+<%= slugname %>({ thing: 'foo', anotherThing: 'bar' });
 ```
 
 ## Contributing
