@@ -25,13 +25,14 @@ Or use [Browserify](http://browserify.org/):
 <%}%>
 ```sh
 npm install <%= slugname %> --save
+var <%= slugname %> = require('<%= slugname %>');
 ```
 
 ## Usage
 
 ```javascript
 var <%= slugname %> = require('<%= slugname %>');
-<%= slugname %>.awesome(); // "awesome"
+<%= slugname %>.doTheThing({ thing: 'foo', anotherThing: 'bar' });
 ```
 
 ## Contributing
