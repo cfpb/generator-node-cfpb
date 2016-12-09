@@ -5,7 +5,7 @@
 
 ## Installation
 
-Install this generator by running: `npm install -g generator-node-cfpb`.
+`npm install -g yo generator-node-cfpb`.
 
 
 ## Usage
