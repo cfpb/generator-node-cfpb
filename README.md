@@ -24,7 +24,7 @@ Please read the [Contributing guidelines](CONTRIBUTING.md).
 
 ### Running Tests
 
-To run tests, first install [mocha](http://visionmedia.github.io/mocha/) and any dependencies via npm:
+To run tests, first install [mocha](http://mochajs.org/) and any dependencies via npm:
 
 ```
 npm install
