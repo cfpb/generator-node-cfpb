@@ -1,31 +1,31 @@
 {
   "name": "<%= slugname %>",
   "version": "0.1.0",
-  "main": "index.js",
   "description": "<%= props.description %>",
-  "homepage": "<%= repoUrl %>",
-  "bugs": "<%= repoUrl %>/issues",
-  "author": {
-    "name": "Consumer Financial Protection Bureau",
-    "url": "http://consumerfinance.gov"
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test/<%= slugname %>-tests.js"<% if (props.browser === "yes") { %>,
+    "browser": "mkdir -p dist && ./node_modules/.bin/browserify index.js -s <%= slugname %> -o dist/<%= slugname %>.js && ./node_modules/.bin/uglifyjs dist/<%= slugname %>.js -m -c sequences,dead_code,conditionals,booleans,unused,if_return,join_vars,drop_console -o dist/<%= slugname %>.min.js"<%}%>
   },
   "repository": {
     "type": "git",
     "url": "<%= repoUrl %>"
   },
-  "license": "Public Domain",
+  "bugs": "<%= repoUrl %>/issues",
   "keywords": [
     "<%= slugname %>"<% for (var i=0;i<keywords.length;i++) { %>,
     "<%= keywords[i] %>"<% } %><% if (props.browser === "yes") { %>,
     "browserify"<% } %>
   ],
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "tech@cfpb.gov",
+    "url": "https://cfpb.github.io/"
+  },
+  "license": "SEE LICENSE IN TERMS.md",
   "devDependencies": {
     "nodeunit": "~0.8.6"<% if (props.browser === "yes") { %>,
     "browserify": "^4.1.3",
     "uglify-js": "~2.4.15"<% } %>
-  },
-  "scripts": {
-    "test": "nodeunit test/<%= slugname %>-tests.js"<% if (props.browser === "yes") { %>,
-    "browser": "mkdir -p dist && ./node_modules/.bin/browserify index.js -s <%= slugname %> -o dist/<%= slugname %>.js && ./node_modules/.bin/uglifyjs dist/<%= slugname %>.js -m -c sequences,dead_code,conditionals,booleans,unused,if_return,join_vars,drop_console -o dist/<%= slugname %>.min.js"<%}%>
   }
 }
